@@ -1,6 +1,6 @@
 const user = {
     username: 'admin',
-    password: 'Nsf0cus!@#',
+    password: 'admin',
 };
 // let target = 'https://10.67.1.181';
 let target = 'http://localhost:8888';
@@ -10,11 +10,7 @@ let CSRFToken;
 const PROXY_CONFIG = [{
     target: target,
     context: [
-        '/bsa_north_interface',
-        '/systemAlert',
-        '/launch',
-        '/user',
-        '/systemOperate',
+        '/uploader',
     ],
     secure: false,
     changeOrigin: true,
